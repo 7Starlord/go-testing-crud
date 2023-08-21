@@ -67,7 +67,7 @@ func createCar(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(car)
 }
 
-// updateCar Function //Created by ad1tya
+// updateCar Function 
 func updateCar(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	params := mux.Vars(r)
